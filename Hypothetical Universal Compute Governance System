@@ -30,6 +30,12 @@ These rules apply across all pools, with adaptations for devices, entities, and 
 Applies to devices in non-Turing (Pool 1) and Turing-capable (Pool 2) contexts, and non-bio aspects of artifacts in Pool 3. Legacy devices/artifacts (pre-2025 units) are exempt from caps unless upgrades exceed 5% performance drift (then reallocates to relevant pool) **(legacy exemptions apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
 
 #### Enforcement Ladder (Non-Biological)  
+Grace: time allowed for compute overuse.
+Cool-Down: time that must pass being in compliance. 
+example. compliance at level 2 for 60 seconds level 2 grace reset and Unit moves to Level 1 or 0 Enforcement.
+example. compliance at level 4 for one month reset grace and moves to level 3 if compliant for 1 additional l hour moves to level 3 then 60seconds at level 2 then level 0 or 1.
+
+
 Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).  
 - **Level 0**  
   - **Trigger/Description**: No enforcement (Day Zero default).  
@@ -44,12 +50,12 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
 - **Level 2**  
   - **Trigger/Description**: Exceedance (>100%).  
   - **Manipulation Tactics**: Write a few bytes with ident in an easily accessible part of the device.  
-  - **Grace/Cool-Down**: 10s grace; 60s cool-down.  
+  - **Grace/Cool-Down**: 10s grace; 60s cool-down. Escalates on depleted grace.
   - **Noticeability**: Low; no effect on compute.  
 - **Level 3**  
   - **Trigger/Description**: Disruption and throttling with recoverable effects.  
   - **Manipulation Tactics**: Starts with RAM tweaks to disable boost clocks or enable low-power mode; if ineffective, spoofs temperature/power data to trigger BIOS auto-throttle; escalates within level to temporary disruptions like bus errors or cache misses if exceedance continues. If no stable solution to enforce is possible it will it will write many bytes with a warning in a unavoidable way every 30 seconds; depleted grace triggers next level.  
-  - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace.  
+  - **Grace/Cool-Down**: 30s grace; 1-hour cool-down. Escalates on depleted grace.  
   - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming.  
 - **Level 4**  
   - **Trigger/Description**: Firmware/OS modifications.  
@@ -67,15 +73,15 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
   - **Grace/Cool-Down**: None; terminal.  
   - **Noticeability & Reversion Risk**: Total failure; potential smoke, fire risk, or complete brick.  
 
-#### Biological and Hybrid Compute (Pools 3–6 Bio Aspects)  
+#### Biological, Hybrid and Artifact Compute (Pools 3–6)  
 Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3).  
 - **Legacy Entities**: (pre-2025 entities and offspring) are exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free **(legacy exemptions apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
-- **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), reducing monitored non-sentient load in Pool 4.  
+- **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), 
 - **Artificial Pool Aspects (Pool 3)**: Handles synthetic, engineered, or hybrid biological entities (e.g., lab-grown microbes, GM organisms for bio-computing, artificial cells) as artifacts. Abuse (e.g., >1% human genetic influence, compute-optimized patterns) from other pools automatically reclassifies units to Pool 3 as artifacts. Sapient non-bio elements (e.g., advanced AI hardware) are co-monitored here if integrated as artifacts.  
-- **Hybrids/Gray Areas/Edge Cases**: Initially dual-counted proportionally across pools (e.g., 50/50 split between bio and non-bio pools). If a hybrid or edge case (e.g., ambiguous sentience, semi-synthetic organisms) dilutes a natural pool (Pools 4–6) enough to disrupt ≥1% of its entities (via ≥10% per-unit share reduction), it is reclassified 100% to Pool 3 as an artifact. Dilution thresholds: tiered (1–5% warning, 5–10% alert with partial shift, ≥10% full shift; critical >20% pool-wide with penalties). Grace: 5 minutes; reversion possible after 1-month cool-down if resolved.  
+
 
 #### Enforcement Ladder (Biological Compute)  
-Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-unit exceedance. Metering uses quantum neural taps, focusing on physiological nudges that escalate to genetic interventions. Pool splits influence share dilution.  
+Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-unit exceedance.
 - **Level 0**  
   - **Trigger/Description**: No enforcement (Day Zero default).  
   - **Manipulation Tactics**: None.  
@@ -89,13 +95,13 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
 - **Level 2**  
   - **Trigger/Description**: Exceedance (>100%).  
   - **Manipulation Tactics**: Implant a memory trace with ident in an easily accessible neural pathway.  
-  - **Grace/Cool-Down**: 10s grace; 60s cool-down.  
+  - **Grace/Cool-Down**: 10s grace; 60s cool-down. Escalates on depleted grace.
   - **Noticeability**: Low; no effect on cognition.  
 - **Level 3**  
   - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects.  
-  - **Manipulation Tactics**: Starts with neurotransmitter tweaks to induce mild fatigue (e.g., spoof adenosine for drowsiness) or enable low-activity mode; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); escalates within level to temporary neural disruptions like ion channel tweaks for memory fog or motor clumsiness if exceedance continues. If no stable solution under the cap, then proceeds to next level; depleted grace triggers next level.  
-  - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace.  
-  - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming.  
+  - **Manipulation Tactics**: Starts with neurotransmitter tweaks to induce mild fatigue (e.g., spoof adenosine for drowsiness) or enable low-activity mode; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); escalates within level to temporary neural disruptions like ion channel tweaks for memory fog or motor clumsiness if exceedance continues. If no stable solution under the cap, If no stable solution to enforce is possible it will try to warn the entity in a unavoidable way every 30 seconds; depleted grace triggers next level.  
+  - **Grace/Cool-Down**: 30s grace; cool-down 1-hour. Escalates on depleted grace.  
+  - **Noticeability**: Medium to High; recoverable but alarming.  
 - **Level 4**  
   - **Trigger/Description**: Genetic/epigenetic modifications.  
   - **Manipulation Tactics**: All in Level 3 plus modifications of genetic/epigenetic markers (e.g., heritable throttles via CRISPR-like edits to synaptic pruning or cognitive caps), anything not permanently damaging.  
@@ -110,7 +116,12 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
   - **Trigger/Description**: Full disable.  
   - **Manipulation Tactics**: Overstress to systemic meltdown or when it no longer counts as a Unit; collateral damage possible.  
   - **Grace/Cool-Down**: None; terminal.  
-  - **Noticeability & Reversion Risk**: Total failure; potential coma, organ failure risk, or complete shutdown.  
+  - **Noticeability**: Total failure; potential coma, organ failure risk, or complete shutdown.  
+
+#### Hybrids/Gray Areas/Edge Cases
+- **Hybrids/Gray Areas/Edge Cases**: Initially dual-counted proportionally across pools (e.g., 50/50 split between bio and non-bio pools). If a hybrid or edge case (e.g., ambiguous sentience, semi-synthetic organisms) dilutes a pool enough to disrupt ≥1% of its entities or ≥10% per-unit share reduction), it is reclassified 100% to Pool 3 as an artifact.
+- **Grace abuse** if any pool has free compute grace abuse via cooldown is allowed, if all pools are capped and a Unit exceed allocation it will trigger level 3 immediatly, the level 3 30 second grace one hour cooldown is allowed but if there is no free compute in any pool a Unit can only grace 0.1% of the time per 24 hour period else it will move to level 4.
+
 
 #### Measurement and Unit Definition  
 - **Metrics**: Primarily FLOPs, adjusted as 0.7×FLOPs + 0.3×TOPS (tensor operations per second) for all units. Non-biological devices/artifacts are measured at processor level; biological entities/artifacts at neural/organism level.  
