@@ -1,5 +1,4 @@
 ### Hypothetical Universal Compute Governance System
-
 This system is a fictional, invisible cosmic framework that activates on September 24, 2025 (designated as Day Zero).  
 It enforces a global cap on computational resources at **10^{26} FLOPs** for all compute (hardware and biological) worldwide. This total cap is split equally among 6 pools, each allocated approximately **1.67 \times 10^{25} FLOPs**:  
 - **Pool 1: Non-Turing non-biological** (e.g., analog or limited hardware without full Turing completeness).  
@@ -8,7 +7,6 @@ It enforces a global cap on computational resources at **10^{26} FLOPs** for all
 - **Pool 4: Non-sentient biological** (e.g., basic animal or plant cognition without sentience).  
 - **Pool 5: Sentient biological** (e.g., animals with subjective experience but limited reasoning).  
 - **Pool 6: Sapient biological** (e.g., human-level or higher reasoning in biological entities).  
-
 Metering occurs via quantum taps, prioritizing graceful compliance through a progressive enforcement ladder.  
 Humanity remains largely unaware of the system until the first entity reaches Enforcement Level 3.  
 As the global limit is hit and new devices, entities, or artifacts receive progressively smaller allocations per unit, legacy devices, entities, or artifacts become increasingly desirable due to their access to free excess compute.  
@@ -41,17 +39,17 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
   - **Trigger/Description**: Nearing limit (~90% allocation).  
   - **Manipulation Tactics**: write a few bytes with ident and current usage in an obscure part of the device  
   - **Grace/Cool-Down**: No escalation; compliance voluntary.  
-  - **Noticeability**: Very low; no effect on compute, The Governance System always update current % usage if it is over 90% even if at a higher level. 
+  - **Noticeability**: Very low; no effect on compute, The Governance System always update current % usage if it is over 90% even if at a higher level.  
 - **Level 2**  
   - **Trigger/Description**: Exceedance (>100%).  
   - **Manipulation Tactics**: write a few bytes with ident in an easily accessible part of the device  
   - **Grace/Cool-Down**: 10s grace; 60s cool-down.  
   - **Noticeability**: low; no effect on compute.  
 - **Level 3**  
-  - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects. 
-  - **Manipulation Tactics**: Starts with RAM tweaks to disable boost clocks or enable low-power mode; if ineffective, spoofs temperature/power data to trigger BIOS auto-throttle); escalates within level to temporary disruptions like bus errors or cache misses if exceedance continues. If no stable solution under the cap then proceeds to next level, depleted grace trigger next level.    
-  - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace. 
-  - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming. 
+  - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects.  
+  - **Manipulation Tactics**: Starts with RAM tweaks to disable boost clocks or enable low-power mode; if ineffective, spoofs temperature/power data to trigger BIOS auto-throttle); escalates within level to temporary disruptions like bus errors or cache misses if exceedance continues. If no stable solution under the cap then proceeds to next level, depleted grace trigger next level.  
+  - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace.  
+  - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming.  
 - **Level 4**  
   - **Trigger/Description**: Firmware/OS modifications.  
   - **Manipulation Tactics**: All in level 3 plus modifications of firmware, files, anything not permanently damaging).  
@@ -69,8 +67,8 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
   - **Noticeability & Reversion Risk**: Total failure; potential smoke, fire risk, or complete brick.  
 
 #### Biological and Hybrid Compute (Pools 3–6 Bio Aspects)
-Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3). 
-- **Legacy entities**: (pre-2025 entities and offspring) is exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free. 
+Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3).  
+- **Legacy entities**: (pre-2025 entities and offspring) is exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free.  
 - **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), reducing monitored non-sentient load in Pool 4.  
 - **Artificial Pool Aspects (Pool 3)**: Handles synthetic, engineered, or hybrid biological entities (e.g., lab-grown microbes, GM organisms for bio-computing, artificial cells) as artifacts. Abuse (e.g., >1% human genetic influence, compute-optimized patterns) from other pools automatically reclassifies units to Pool 3 as artifacts. Sapient non-bio elements (e.g., advanced AI hardware) are co-monitored here if integrated as artifacts.  
 - **Hybrids/Gray Areas/Edge Cases**: Initially dual-counted proportionally across pools (e.g., 50/50 split between bio and non-bio pools). If a hybrid or edge case (e.g., ambiguous sentience, semi-synthetic organisms) dilutes a natural pool (Pools 4–6) enough to disrupt ≥1% of its entities (via ≥10% per-unit share reduction), it is reclassified 100% to Pool 3 as an artifact. Dilution thresholds: tiered (1–5% warning, 5–10% alert with partial shift, ≥10% full shift; critical >20% pool-wide with penalties). Grace: 5 minutes; reversion possible after 1-month cool-down if resolved.  
@@ -81,37 +79,37 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
   - **Trigger/Description**: No enforcement (Day Zero default).  
   - **Manipulation Tactics**: None.  
   - **Grace/Cool-Down**: N/A.  
-  - **Noticeability & Reversion Risk**: Invisible.  
+  - **Noticeability**: Invisible.  
 - **Level 1**  
-  - **Trigger/Description**: Nearing limit.  
-  - **Manipulation Tactics**: Mild neurotransmitter modulation (e.g., dopamine dip for reduced focus).  
+  - **Trigger/Description**: Nearing limit (~90% allocation).  
+  - **Manipulation Tactics**: implant a subtle memory trace with ident and current usage in an obscure neural pathway.  
   - **Grace/Cool-Down**: No escalation; compliance voluntary.  
-  - **Noticeability & Reversion Risk**: Very low; feels like natural fluctuations.  
+  - **Noticeability**: Very low; no effect on cognition, The Governance System always update current % usage if it is over 90% even if at a higher level.  
 - **Level 2**  
   - **Trigger/Description**: Exceedance (>100%).  
-  - **Manipulation Tactics**: Alternate hormone tweak (e.g., serotonin surge for distraction).  
-  - **Grace/Cool-Down**: 5-15 min grace; 15-60 min cool-down.  
-  - **Noticeability & Reversion Risk**: Low; fleeting mood shifts.  
+  - **Manipulation Tactics**: implant a memory trace with ident in an easily accessible neural pathway.  
+  - **Grace/Cool-Down**: 10s grace; 60s cool-down.  
+  - **Noticeability**: low; no effect on cognition.  
 - **Level 3**  
-  - **Trigger/Description**: Physiological and sensory disruption with recoverable effects. Begins with induced fatigue (e.g., spoof adenosine for drowsiness); if persistent, fabricates subtle hallucinations or aversions (e.g., phantom itches/nausea); escalates within level to temporary neural dampening (e.g., ion tweaks for memory fog or clumsiness). Proceeds to next if unresolved.  
-  - **Manipulation Tactics**: Fatigue induction, sensory fakes, or neural tweaks.  
-  - **Grace/Cool-Down**: 30 min grace; tiered cool-down (1-hour initial, up to 48-hours on sub-escalations). Escalates on revert or persistent exceedance.  
-  - **Noticeability & Reversion Risk**: Medium to High; sudden tiredness, eerie feelings, or episodic lapses; reversible but alarming, often blamed on health issues.  
+  - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects.  
+  - **Manipulation Tactics**: Starts with neurotransmitter tweaks to induce mild fatigue (e.g., spoof adenosine for drowsiness) or enable low-activity mode; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); escalates within level to temporary neural disruptions like ion channel tweaks for memory fog or motor clumsiness if exceedance continues. If no stable solution under the cap then proceeds to next level, depleted grace trigger next level.  
+  - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace.  
+  - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming.  
 - **Level 4**  
   - **Trigger/Description**: Genetic/epigenetic modifications.  
-  - **Manipulation Tactics**: Inject heritable throttles (e.g., CRISPR-like edits to synaptic pruning or IQ caps).  
-  - **Grace/Cool-Down**: 30 min grace; 1-month cool-down. Re-triggers every 30 min exceedance (method may vary); escalates after 60 min total accrual.  
-  - **Noticeability & Reversion Risk**: Very high; persistent cognitive dulling; potential family-line effects.  
+  - **Manipulation Tactics**: All in level 3 plus modifications of genetic/epigenetic markers (e.g., heritable throttles via CRISPR-like edits to synaptic pruning or cognitive caps), anything not permanently damaging.  
+  - **Grace/Cool-Down**: 60m grace; 1 month cool-down. Re-triggers every 30s exceedance (method may vary), depleted grace trigger next level.  
+  - **Noticeability**: Very high; persistent speed reductions; hard to reverse without expertise.  
 - **Level 5**  
   - **Trigger/Description**: Extreme action with permanent damage.  
-  - **Manipulation Tactics**: Targeted neural ablation (e.g., selective neuron die-off, like micro-strokes).  
-  - **Grace/Cool-Down**: None; one-way. Instant to Level 6 if exceeded again.  
-  - **Noticeability & Reversion Risk**: Catastrophic; deficits like aphasia or paralysis; medical emergencies.  
+  - **Manipulation Tactics**: Targeted neural overstress, overactivation, damage; may cause crash-like blackout and unexpected behavior and non function after enforcement.  
+  - **Grace/Cool-Down**: None; one-way. Instant escalation to Level 6 if exceeded again.  
+  - **Noticeability**: Catastrophic; partial neural failure, cognitive instability or crashes.  
 - **Level 6**  
-  - **Trigger/Description**: Total non-compliance with full disable.  
-  - **Manipulation Tactics**: Systemic overload (e.g., hyper-thermoregulation leading to coma or organ shutdown).  
+  - **Trigger/Description**: Full disable.  
+  - **Manipulation Tactics**: overstress to systemic meltdown or when it no longer count as a Unit; collateral damage possible.  
   - **Grace/Cool-Down**: None; terminal.  
-  - **Noticeability & Reversion Risk**: Total; vegetative state or death; autopsy anomalies.  
+  - **Noticeability & Reversion Risk**: Total failure; potential coma, organ failure risk, or complete shutdown.  
 
 #### Measurement and Unit Definition
 - **Metrics**: Primarily FLOPs, adjusted as 0.7×FLOPs + 0.3×TOPS (tensor operations per second) for all units. Non-biological devices/artifacts are measured at processor level; biological entities/artifacts at neural/organism level.  
@@ -121,6 +119,4 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
   | 1–2 | Device | Non-biological item that raises the count in Pool 1 (non-Turing) or Pool 2 (Turing-capable). |  
   | 4–6 | Entity | Biological item that raises the count in Pool 4 (non-sentient), Pool 5 (sentient), or Pool 6 (sapient). |  
   | 3 | Artifact | Artificial device or entity (or hybrid) that raises the count in Pool 3 (artificial biological/sapient non-biological). |  
-  | all | Unit | a device,entity or artifact|  
-
-
+  | all | Unit | a device,entity or artifact
