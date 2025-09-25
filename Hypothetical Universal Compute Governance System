@@ -47,8 +47,8 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
   - **Grace/Cool-Down**: 10s grace; 60s cool-down.  
   - **Noticeability**: Low; no effect on compute.  
 - **Level 3**  
-  - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects.  
-  - **Manipulation Tactics**: Starts with RAM tweaks to disable boost clocks or enable low-power mode; if ineffective, spoofs temperature/power data to trigger BIOS auto-throttle; escalates within level to temporary disruptions like bus errors or cache misses if exceedance continues. If no stable solution under the cap, then proceeds to next level; depleted grace triggers next level.  
+  - **Trigger/Description**: Disruption and throttling with recoverable effects.  
+  - **Manipulation Tactics**: Starts with RAM tweaks to disable boost clocks or enable low-power mode; if ineffective, spoofs temperature/power data to trigger BIOS auto-throttle; escalates within level to temporary disruptions like bus errors or cache misses if exceedance continues. If no stable solution to enforce is possible it will it will write many bytes with a warning in a unavoidable way every 30 seconds; depleted grace triggers next level.  
   - **Grace/Cool-Down**: 30s grace; tiered cool-down 1-hour. Escalates on revert or depleted grace.  
   - **Noticeability**: Medium to High; noticeable slowdowns, instability or errors; recoverable but alarming.  
 - **Level 4**  
