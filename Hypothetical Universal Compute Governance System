@@ -10,47 +10,24 @@ It enforces a global cap on computational resources at **10^{26} FLOPs** for all
 
 Metering occurs via quantum taps, prioritizing graceful compliance through an enforcement ladder.  
 Humanity remains largely unaware of the system until the first entity reaches Enforcement Level 3.  
-When the global limit is hit and new devices, entities, or artifacts receive progressively smaller allocations per unit, legacy devices, entities, or artifacts become increasingly desirable due to their access to free excess compute  
+ 
 
 #### Core Compute Rules  
-These rules apply across all pools, with adaptations for devices, entities, and artifacts.  
-- **Global Cap**: Total capped compute across all pools is limited to **10^{26} FLOPs**. Excess compute from legacy devices, entities, or artifacts (beyond its allocated share) remains free and uncapped **(only within the origin solar system, defined as the area inside the Heliosphere)**.  
-- **Legacy Allocation**: 
-A Legacy unit is assigned a compute cap that is total units in its pool divided by the pools compute
-A legacy unit it always at enforcement level 0
-A legacy unit can only affect the pool up to its assigned cap, the rest is free compute not from any pool 
-Legacy status and share calculations apply only within the origin solar system, defined as the area inside the Heliosphere.  
+  
+Global Cap: Total capped compute across all pools is limited to 10^{26} FLOPs.  
 
+- **Legacy Allocation**: 
+Excess compute from legacy devices, entities, or artifacts (beyond its allocated share) remains free and uncapped (only within the origin solar system, defined as the area inside the Heliosphere) 
+A Legacy Unit is assigned a dynamic compute cap that is total units in its pool divided by the pools compute
+A legacy Unit it always at enforcement level 0
+A legacy Unit can only affect the pool up to its cap, the rest is free compute not from any pool 
+Legacy status and share calculations apply only within the origin solar system, defined as the area inside the Heliosphere.  
+- Pool 4 only count entities when it's compute is used by a Unit in any of the other pools, a entity in pool 4 may use compute from entities in pool for 4 but will count as its own compute. 
+- **Legacy Entities**: (entities and offspring) are exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free 
+- **Legacy Devices**: May be repaired but when 5% of the mass it was originally constructed from is repairs it stop being legacy.  
 - **New Unit Allocation**: The remaining compute (after legacy draw) plus any underutilized pool capacity is split equally among all new units in that pool.  
 - **Multi-Unit Systems**: Each removable or independent unit counts as a separate unit for census, shares, and enforcement (e.g., a multi-core device counts cores separately if socketed; integrated systems are treated as a single unit).  
 - **Enforcement Integration**: Enforcement triggers on a per-unit basis for exceedances within its pool. See the dedicated Enforcement Ladder sections below for details.
-
-
-#### Enforcement Global rules and Info
-
-Grace: time allowed for compute overuse.
-Cool-Down: time that must pass being in compliance. 
-
-the grace period allows temporary exceedance without immediate escalation. However, the cool-down only accumulates time while the unit is in compliance.
-
-example. compliance at level 2 for 60 seconds level 2 grace reset and Unit moves to Level 1 or 0 Enforcement.
-example. compliance at level 4 for one month reset grace and moves to level 3 if compliant for 1 additional l hour moves to level 3 then 60seconds at level 2 then level 0 or 1. 
-
-#### Non-Biological Compute Rules
-
-Applies to devices in non-Turing (Pool 1) and Turing-capable (Pool 2) contexts, and non-bio aspects of artifacts in Pool 3. 
-Legacy devices/artifacts (pre-2025 units) are exempt from caps unless upgrades exceed 5% performance drift (then reallocates to relevant pool)  
-
-#### Biological, Hybrid and Artifact Compute Rules
-
-Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3). 
- 
-- **Legacy Entities**: (pre-2025 entities and offspring) are exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free 
-- **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), 
-- **Artificial Pool Aspects (Pool 3)**: Handles synthetic, engineered, or hybrid biological entities (e.g., lab-grown microbes, GM organisms for bio-computing, artificial cells) as artifacts. Abuse (e.g., >1% human genetic influence, compute-optimized patterns) from other pools automatically reclassifies units to Pool 3 as artifacts. Sapient non-bio elements (e.g., advanced AI hardware) are co-monitored here if integrated as artifacts.  
-
-
-
 
 
 #### Enforcement Ladder (Non-Biological)  
@@ -114,13 +91,13 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
   - **Noticeability**: Low; no effect on cognition.  
 - **Level 3**  
   - **Trigger/Description**: Noticeable disruption and throttling with recoverable effects.  
-  - **Manipulation Tactics**: Starts with neurotransmitter tweaks to induce mild fatigue (e.g., spoof adenosine for drowsiness) or enable low-activity mode; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); escalates within level to temporary neural disruptions like ion channel tweaks for memory fog or motor clumsiness if exceedance continues. If no stable solution under the cap, If no stable solution to enforce is possible it will try to warn the entity in a unavoidable way every 30 seconds; depleted grace triggers next level.  
+  - **Manipulation Tactics**: Starts with neurotransmitter tweaks to induce mild fatigue (e.g., spoof adenosine for drowsiness) or enable low-activity mode; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); depleted grace triggers next level.  
   - **Grace/Cool-Down**: 30s grace; cool-down 1-hour. Escalates on depleted grace.  
   - **Noticeability**: Medium to High; recoverable but alarming.  
 - **Level 4**  
   - **Trigger/Description**: Genetic/epigenetic modifications.  
-  - **Manipulation Tactics**: All in Level 3 plus modifications of genetic/epigenetic markers (e.g., heritable throttles via CRISPR-like edits to synaptic pruning or cognitive caps), anything not permanently damaging.  
-  - **Grace/Cool-Down**: 60m grace; 1 month cool-down. Re-triggers every 30s exceedance (method may vary); depleted grace triggers next level.  
+  - **Manipulation Tactics**: All in Level 3 plus anything not permanently damaging.  
+  - **Grace/Cool-Down**: 60m grace; 1 month cool-down. Re-triggers every 30s exceedance (method may vary); ; if ineffective, fabricates subtle sensory data to trigger aversion responses (e.g., phantom itches or nausea); escalates within level to temporary neural disruptions like ion channel tweaks for memory fog or motor clumsiness if exceedance continues. If no stable solution under the cap, If no stable solution to enforce is possible it will try to warn the entity in a unavoidable way every 30 seconds; depleted grace triggers next level.  
   - **Noticeability**: Very high; persistent speed reductions; hard to reverse without expertise.  
 - **Level 5**  
   - **Trigger/Description**: Extreme action with permanent damage.  
@@ -134,8 +111,18 @@ Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-un
   - **Noticeability**: Total failure; potential coma, organ failure risk, or complete shutdown.  
 
 #### Hybrids/Gray Areas/Edge Cases
-- **Hybrids/Gray Areas/Edge Cases**: Initially dual-counted proportionally across pools (e.g., 50/50 split between bio and non-bio pools). If a hybrid or edge case (e.g., ambiguous sentience, semi-synthetic organisms) dilutes a pool enough to disrupt ≥1% of its entities or ≥10% per-unit share reduction), it is reclassified 100% to Pool 3 as an artifact.
-- **Grace abuse** if any pool has free compute grace abuse via cooldown is allowed, if all pools are capped and a Unit exceed allocation it will trigger level 3 immediatly, the level 3 30 second grace one hour cooldown is allowed but if there is no free compute in any pool a Unit can only grace 0.1% of the time per 24 hour period else it will move to level 4.
+- **Hybrids/Gray Areas/Edge Cases**: Initially dual-counted proportionally across pools (e.g., 50/50 split between bio and non-bio pools). If a hybrid or edge case (e.g., ambiguous sentience, semi-synthetic organisms) dilutes a pool enough to cause ≥10% per-unit share reduction), it is reclassified 100% to Pool 3 as an artifact.
+
+- **Grace abuse** if any pool has free compute grace abuse via cooldown is allowed, if there is no free compute in any pool a Unit can only grace 0.1% of the time per 24 hour period else it will move to level 4.
+
+Grace: time allowed for compute overuse.
+Cool-Down: time that must pass being in compliance. 
+
+the grace period allows temporary exceedance without immediate escalation. However, the cool-down only accumulates time while the unit is in compliance.
+
+example. compliance at level 2 for 60 seconds level 2 grace reset and Unit moves to Level 1 or 0 Enforcement.
+example. compliance at level 4 for one month reset grace and moves to level 3 if compliant for 1 additional l hour moves to level 3 then 60seconds at level 2 then level 0 or 1. 
+
 
 
 #### Measurement and Unit Definition  
