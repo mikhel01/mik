@@ -8,35 +8,54 @@ It enforces a global cap on computational resources at **10^{26} FLOPs** for all
 - **Pool 5: Sentient biological** (e.g., animals with subjective experience but limited reasoning).  
 - **Pool 6: Sapient biological** (e.g., human-level or higher reasoning in biological entities).  
 
-Metering occurs via quantum taps, prioritizing graceful compliance through a progressive enforcement ladder.  
+Metering occurs via quantum taps, prioritizing graceful compliance through an enforcement ladder.  
 Humanity remains largely unaware of the system until the first entity reaches Enforcement Level 3.  
-As the global limit is hit and new devices, entities, or artifacts receive progressively smaller allocations per unit, legacy devices, entities, or artifacts become increasingly desirable due to their access to free excess compute **(legacy status and its benefits apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
+When the global limit is hit and new devices, entities, or artifacts receive progressively smaller allocations per unit, legacy devices, entities, or artifacts become increasingly desirable due to their access to free excess compute  
 
 #### Core Compute Rules  
 These rules apply across all pools, with adaptations for devices, entities, and artifacts.  
 - **Global Cap**: Total capped compute across all pools is limited to **10^{26} FLOPs**. Excess compute from legacy devices, entities, or artifacts (beyond its allocated share) remains free and uncapped **(only within the origin solar system, defined as the area inside the Heliosphere)**.  
-- **Legacy Allocation**: The system maintains a real-time census of all active Units worldwide. This census is used exclusively to calculate per-unit shares within its pool. As the total number of Units in a pool increases, per-unit shares for legacy units decrease proportionally **(legacy status and share calculations apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
+- **Legacy Allocation**: 
+A Legacy unit is assigned a compute cap that is total units in its pool divided by the pools compute
+A legacy unit it always at enforcement level 0
+A legacy unit can only affect the pool up to its assigned cap, the rest is free compute not from any pool 
+Legacy status and share calculations apply only within the origin solar system, defined as the area inside the Heliosphere.  
+
 - **New Unit Allocation**: The remaining compute (after legacy draw) plus any underutilized pool capacity is split equally among all new units in that pool.  
 - **Multi-Unit Systems**: Each removable or independent unit counts as a separate unit for census, shares, and enforcement (e.g., a multi-core device counts cores separately if socketed; integrated systems are treated as a single unit).  
-- **Enforcement Integration**: Enforcement triggers on a per-unit basis for exceedances within its pool. See the dedicated Enforcement Ladder sections below for details (non-biological vs. biological).  
+- **Enforcement Integration**: Enforcement triggers on a per-unit basis for exceedances within its pool. See the dedicated Enforcement Ladder sections below for details.
 
-**Core Unit Overview**  
-| Component | Key Mechanic |  
-|-----------|--------------|  
-| **Legacy Unit** (Device/Entity/Artifact) | Share-based cap + free excess **(only within the origin solar system, defined as the area inside the Heliosphere)** |  
-| **New Unit** (Device/Entity/Artifact) | Equal split of remainder + pool between all new units |  
 
-#### Non-Biological Compute Rules (Pools 1–2 and Non-Bio Aspects of Pool 3)  
-Applies to devices in non-Turing (Pool 1) and Turing-capable (Pool 2) contexts, and non-bio aspects of artifacts in Pool 3. Legacy devices/artifacts (pre-2025 units) are exempt from caps unless upgrades exceed 5% performance drift (then reallocates to relevant pool) **(legacy exemptions apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
+#### Enforcement Global rules and Info
 
-#### Enforcement Ladder (Non-Biological)  
 Grace: time allowed for compute overuse.
 Cool-Down: time that must pass being in compliance. 
+
+the grace period allows temporary exceedance without immediate escalation. However, the cool-down only accumulates time while the unit is in compliance.
+
 example. compliance at level 2 for 60 seconds level 2 grace reset and Unit moves to Level 1 or 0 Enforcement.
-example. compliance at level 4 for one month reset grace and moves to level 3 if compliant for 1 additional l hour moves to level 3 then 60seconds at level 2 then level 0 or 1.
+example. compliance at level 4 for one month reset grace and moves to level 3 if compliant for 1 additional l hour moves to level 3 then 60seconds at level 2 then level 0 or 1. 
+
+#### Non-Biological Compute Rules
+
+Applies to devices in non-Turing (Pool 1) and Turing-capable (Pool 2) contexts, and non-bio aspects of artifacts in Pool 3. 
+Legacy devices/artifacts (pre-2025 units) are exempt from caps unless upgrades exceed 5% performance drift (then reallocates to relevant pool)  
+
+#### Biological, Hybrid and Artifact Compute Rules
+
+Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3). 
+ 
+- **Legacy Entities**: (pre-2025 entities and offspring) are exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free 
+- **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), 
+- **Artificial Pool Aspects (Pool 3)**: Handles synthetic, engineered, or hybrid biological entities (e.g., lab-grown microbes, GM organisms for bio-computing, artificial cells) as artifacts. Abuse (e.g., >1% human genetic influence, compute-optimized patterns) from other pools automatically reclassifies units to Pool 3 as artifacts. Sapient non-bio elements (e.g., advanced AI hardware) are co-monitored here if integrated as artifacts.  
 
 
-Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).  
+
+
+
+#### Enforcement Ladder (Non-Biological)  
+
+Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3). Triggers on per-unit exceedance.
 - **Level 0**  
   - **Trigger/Description**: No enforcement (Day Zero default).  
   - **Manipulation Tactics**: None.  
@@ -73,15 +92,11 @@ Applies to devices (Pools 1–2) and non-bio artifacts (Pool 3).
   - **Grace/Cool-Down**: None; terminal.  
   - **Noticeability & Reversion Risk**: Total failure; potential smoke, fire risk, or complete brick.  
 
-#### Biological, Hybrid and Artifact Compute (Pools 3–6)  
-Applies to entities (Pools 4–6) and bio aspects of artifacts (Pool 3).  
-- **Legacy Entities**: (pre-2025 entities and offspring) are exempt unless genetic drift exceeds 5% (then it falls under the relevant pool). Excess is free **(legacy exemptions apply only within the origin solar system, defined as the area inside the Heliosphere)**.  
-- **Non-Sentient Exemptions**: Wild plants/algae, agricultural/domesticated plants, wild bacteria/archaea, fungi/protists are exempt (free and unmonitored), 
-- **Artificial Pool Aspects (Pool 3)**: Handles synthetic, engineered, or hybrid biological entities (e.g., lab-grown microbes, GM organisms for bio-computing, artificial cells) as artifacts. Abuse (e.g., >1% human genetic influence, compute-optimized patterns) from other pools automatically reclassifies units to Pool 3 as artifacts. Sapient non-bio elements (e.g., advanced AI hardware) are co-monitored here if integrated as artifacts.  
 
 
 #### Enforcement Ladder (Biological Compute)  
 Applies to entities (Pools 4–6) and bio artifacts (Pool 3). Triggers on per-unit exceedance.
+
 - **Level 0**  
   - **Trigger/Description**: No enforcement (Day Zero default).  
   - **Manipulation Tactics**: None.  
